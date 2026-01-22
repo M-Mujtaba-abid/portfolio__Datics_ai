@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="porfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script>
+      function show(){
+
+        const nav_for_mob = document.querySelector("#sidebar")
+        nav_for_mob.style.display="flex"
+        console.log("show")
+
+        const hamburger= document.querySelector(".hide")
+        hamburger.style.display="none"
+      }
+      function hide(){
+        
+        const nav_for_mob = document.querySelector("#sidebar")
+        nav_for_mob.style.display="none"
+const hamburger= document.querySelector(".hide")
+        hamburger.style.display="flex"
+
+        console.log("hide")
+        
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <!-- navbar---start------------------------ -->
+
+    <nav id="navbar">
+      <ul id="logo">
+        <img src="image.png" alt="logo" />
+      </ul>
+      <ul id="ul-list" class="for">
+        <li class="li-1 list"><a href="#about_me">About Me</a></li>
+        <li class="li-2 list"><a href="#skills">Skills</a></li>
+        <li class="li-3 list"><a href="#project">Projects</a></li>
+        <li class="li-4 list"><a href="#experience">Experience</a></li>
+        <li class="li-5 list">
+          <a href="#contact" id="nav-contact">Contact Me</a>
+        </li>
+        <li class="hamburger hide">
+          <i onclick="show()" class="fa-solid fa-bars"></i>
+        </li>
+      </ul>
+
+
+      <ul id="sidebar" class="">
+        <li class="cross">
+          <i  onclick="hide()" class="fa-solid fa-x "></i>
+        </li>
+        <li class="list"><a href="#about_me">About Me</a></li>
+        <li class="list"><a href="#skills">Skills</a></li>
+        <li class="list"><a href="#project">Projects</a></li>
+        <li class="list"><a href="#experience">Experience</a></li>
+        <li class="list">
+          <a href="#contact" id="sidebar-contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- navbar---end------------------------ -->
+
+    <!-- home section start------------------------ -->
+
+    <section id="banner">
+      <div class="banner-left">
+        <h3>Hi, I am</h3>
+        <h1><span>Mujtaba Abid</span></h1>
+        <p>MERN Stack Developer & ROR</p>
+
+        <div class="social-btns">
+          <a href="#" class="btn"> <i class="fab fa-github"></i></a>
+          <a href="#" class="btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="banner-right">
+        <img src="my2.png" alt="Mujtaba Abid" />
+      </div>
+    </section>
+    <!-- home section end------------------------ -->
+
+    <!-- home section bottum start end------------------------ -->
+
+    <section id="home_bottum">
+      <div id="left_text_box">
+        <h2>IT BERRIES</h2>
+        <p>
+          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+          varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
+          quis libero viverra facilisis ut ac est. Morbi commodo, eros in
+          dignissim tempus, lacus odio rutrum augue, in semper sem magna quis
+          tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit.
+          Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet
+          varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
+          tempor, accumsan nec eros.
+        </p>
+
+        <a href="">READ MORE</a>
+      </div>
+
+      <div id="rigth_box_image">
+        <img src="picsvg_download.svg" alt="IT Illustration" />
+      </div>
+    </section>
+
+    <!-- home section bottum start end------------------------ -->
+
+    <!-- about me start here------- -->
+
+    <section id="about_me">
+      <div id="top_box">
+        <h1 >ABOUT ME</h1>
+        <p>
+          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+          varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
+          quis libero viverra facilisis ut ac est.
+        </p>
+        <a href="">Explore more</a>
+        <img src="line.svg" alt="">
+      </div>
+
+      <div id="midle_box">
+        <div id="midle_left_box">
+          <h1>DESIGN</h1>
+          <p>
+            I can design the site based on your needs and suggestions. I can
+            also design the site from scratch and consult you during the job.
+          </p>
+        </div>
+        <div id="midle_right_box">
+          <h1>DEVELOPMENT</h1>
+          <p>
+            I can design the site based on your needs and suggestions. I can
+            also design the site from scratch and consult you during the job.
+          </p>
+        </div>
+
+
+    </div>
+    
+      <div id="bottum_box">
+          <h1>MAINTENANCE</h1>
+          <p>
+              I can design the site based on your needs and suggestions. I can also
+              design the site from scratch and consult you during the job.
+            </p>
+            
+            <!-- <div>design</div> -->
+            <img src="line.svg" alt="">
+      </div>
+
+    </section>
+    <!-- about me end here------- -->
+
+
+<!-- Skills-start ------------------------ -->
+<section id="skills">
+  <h1 id="skill_heading">SKILLS</h1>
+
+  <!-- USING NOW -->
+  <div class="same_skill">
+    <h1 class="same_heading">USING NOW:</h1>
+
+    <li><i class="fa-brands fa-html5 html"></i><span>HTML</span></li>
+    <li><i class="fa-brands fa-css3-alt css"></i><span>CSS</span></li>
+    <li><i class="fa-brands fa-js js"></i><span>JavaScript</span></li>
+    <li><i class="fa-brands fa-react react"></i><span>React</span></li>
+    <li><i class="fa-brands fa-bootstrap bootstrap"></i><span>Bootstrap</span></li>
+    <li><i class="fa-brands fa-git-alt git"></i><span>Git</span></li>
+    <li><i class="fa-brands fa-figma figma"></i><span>Figma</span></li>
+    <li><i class="fa-brands fa-html5 html"></i><span>HTML</span></li>
+  </div>
+
+  <!-- LEARNING -->
+  <div class="same_skill">
+    <h1 class="same_heading">LEARNING:</h1>
+
+    <li><i class="fa-brands fa-node-js node"></i><span>Node.js</span></li>
+    <li><i class="fa-solid fa-database mysql"></i><span>MySQL</span></li>
+    <li><i class="fa-solid fa-leaf mongodb"></i><span>MongoDB</span></li>
+    <li><i class="fa-solid fa-code typescript"></i><span>TypeScript</span></li>
+  </div>
+
+  <!-- OTHER SKILLS -->
+  <div class="same_skill">
+    <h1 class="same_heading">OTHER SKILLS:</h1>
+
+    <li><i class="fa-solid fa-c c-lang"></i><span>C</span></li>
+    <li><i class="fa-solid fa-code cpp"></i><span>C++</span></li>
+    <li><i class="fa-brands fa-node-js node"></i><span>Node.js</span></li>
+    <li><i class="fa-solid fa-flag pakistan"></i><span>Pakistan</span></li>
+  </div>
+</section>
+<!-- Skills-end ------------------------ -->
+
+
+
+<!-- Project section start here ------------------------ -->
+<section id="projjects">
+
+
+<h1 id="project_heading"  >PORTFOLIO</h1>
+<section id="project">
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+<div class="cards">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="">
+    <h3>FYP</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe hic illo iure minus possimus impedit commodi ea recusandae nesciunt, perspiciatis aliquid soluta. Quis dolore nulla animi excepturi sint.</p>
+</div>
+
+</section>
+
+</section>
+<!-- Project section ebd here ------------------------ -->
+
+
+
+<!-- Experience stat from here-------
+  -->
+<section id="experience">
+  <h1 class="exp-heading">EXPERIENCE</h1>
+
+  <div class="exp-container">
+
+    <div class="exp-badge react-bg">
+      <h3>Codace Solutions</h3>
+      <span class="role">React.js Intern</span>
+      <p>
+        Worked on building reusable UI components, handling state management,
+        and converting designs into responsive React interfaces.
+      </p>
+    </div>
+
+    <div class="exp-badge mern-bg">
+      <h3>Recurso Labs</h3>
+      <span class="role">MERN Stack Intern</span>
+      <p>
+        Developed full-stack features using MongoDB, Express, React, and Node.js.
+        Also gained hands-on experience with APIs and authentication.
+      </p>
+
+      <span class="role">Ruby on Rails Intern</span>
+      <p>
+        Worked on Rails MVC architecture, CRUD operations, and database handling
+        using ActiveRecord.
+      </p>
+    </div>
+
+    <div class="exp-badge mern-dark-bg">
+      <h3>Datics</h3>
+      <span class="role">MERN Stack Intern</span>
+      <p>
+        Contributed to real-world MERN applications, focusing on backend APIs,
+        database integration, and frontend feature implementation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Experience stat from here-------
+  -->
+
+
+
+  <!-- contact us start from here ------------------------ -->
+<section id="contact">
+  <h1 class="contact-heading">CONTACT US</h1>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- contact us start from here ------------------------ -->
+</body>
+</html>

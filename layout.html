@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(206, 201, 201);
+    }
+    #main {
+      /* border: 2px solid red; */
+      padding: 0.5%;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      
+      gap: 5px;
+      /* padding: 5px; */
+      /* column-gap: 40px; */
+    }
+
+    #header {
+      border: 2px solid black;
+      text-align: center;
+      /* padding: 10px; */
+      height: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aqua;
+
+    }
+    #navbar {
+      border: 2px solid black;
+      text-align: center;
+      /* padding: 10px; */
+      height: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(29, 101, 101);
+    }
+    #middle {
+      /* border: 2px solid yellow; */
+      /* text-align: center; */
+      /* padding: 10px; */
+      display: flex;
+      height: 55%;
+      column-gap: 4px;
+      /* gap: 3px; */
+      
+    }
+    #left_box {
+      /* border: 2px solid orange ; */
+      /* padding:10px; */
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      height: 100%;
+      width: 70%;
+    }
+    #left_top {
+      border: 2px solid black;
+      text-align: center;
+      /* padding: 10px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+      background-color: rgb(25, 61, 194);
+    }
+    #left_bottum {
+      border: 2px solid black;
+      text-align: center;
+      /* padding: 10px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 50%;
+      background-color: rgb(206, 218, 32);
+    }
+    #right_box {
+      border: 2px solid black;
+      /* text-align: center; */
+      /* padding: 10px; */
+      display: flex;
+      /* height: 100%; */
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(141, 21, 67);
+    }
+
+    #footer {
+       border: 2px solid black;
+      text-align: center;
+      /* padding: 10px; */
+      height: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(8, 250, 92);
+    }
+  </style>
+  <body>
+    <div id="main">
+      <header id="header">header</header>
+      <nav id="navbar">navbar</nav>
+
+      <!-- middle -->
+      <div id="middle">
+        <!-- left side --------- -->
+        <div id="left_box">
+          <section id="left_top">
+    <video width="100%" height="100%" controls>
+  <source src="https://www.youtube.com/watch?v=kpnV6M6TaOk" type="video/mp4">
+  Your browser does not support the video tag.
+</video></section>
+          <article id="left_bottum">article left bottum</article>
+        </div>
+
+        <aside id="right_box">
+<iframe width="320" height="240" 
+  src="https://www.youtube.com/embed/kpnV6M6TaOk" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
+
+        </aside>
+      </div>
+
+      <footer id="footer">Footer</footer>
+    </div>
+
+  </body>
+</html>

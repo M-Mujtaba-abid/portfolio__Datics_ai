@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        /* padding: 0; */
+        /* padding: 2px; */
+
+    }
+
+    #main{
+        /* border: 2px solid black; */
+        background-color: yellow;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        text-align: center;
+        row-gap: 5px;
+        /* column-gap: 5px; */
+        padding: 2px;
+    }
+    .item{
+        border: 2px solid black;
+        /* justify-content: center; */
+        display: grid;
+        align-items: center;
+        /* justify-content: center; */
+    }
+ #header{
+    background-color: yellowgreen;
+    /* height:80% ; */
+ }
+
+ #navbar{
+    background-color: rgb(253, 10, 10);
+ }
+
+    #middle{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    column-gap: 5px;
+    
+    }
+
+    #left_box{
+        display: grid;
+        row-gap: 5px;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    #left_top{
+background-color: rgb(12, 12, 206);
+    }
+
+    #left_bottum{
+        background-color: rgb(207, 14, 130);
+    }
+    
+    #right_box{
+    background-color: rgb(7, 79, 52);
+    
+}
+    footer{
+        background-color: rgb(219, 93, 9);
+    }
+</style>
+
+
+</head>
+
+    
+ <body>
+    <div id="main">
+      <header class="item" id="header">header</header>
+      <nav id="navbar" class="item">navbar</nav>
+
+      <!-- middle -->
+      <div class="itm" id="middle">
+        <!-- left side --------- -->
+        <div id="left_box" class="ite">
+         <section id="left_top" class="item">
+            let top box
+    </section>
+          <article id="left_bottum" class="item" >article left bottum</article>
+        </div>
+
+        <aside id="right_box" class="item">
+
+rigth box
+        </aside>
+      </div>
+
+      <footer class="item" id="footer">Footer</footer>
+    </div>
+
+  </body>
+
+
+</html>
